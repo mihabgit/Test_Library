@@ -1,6 +1,7 @@
 package com.example.mytestlibrary.utils;
 
 import android.content.Context;
+import android.view.Gravity;
 import android.widget.Toast;
 
 /**
@@ -12,6 +13,13 @@ public class ToasterMessage {
         
         Toast toast = Toast.makeText(context, message, Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.TOP|Gravity.LEFT, 0, 0);
+        toast.show();
+    }
+
+    public static void showMessageBottom (Context context, String message){
+
+        Toast toast = Toast.makeText(context, message, Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.BOTTOM|Gravity.LEFT, 0, 0);
         toast.show();
     }
 }
