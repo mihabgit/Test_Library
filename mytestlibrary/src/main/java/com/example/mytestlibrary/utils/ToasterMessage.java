@@ -9,8 +9,9 @@ import android.widget.Toast;
 public class ToasterMessage {
 
     public static void showMessage (Context context, String message){
-
-        Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
-
+        
+        Toast toast = Toast.makeText(context, message, Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.TOP|Gravity.LEFT, 0, 0);
+        toast.show();
     }
 }
