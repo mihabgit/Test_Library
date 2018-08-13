@@ -22,4 +22,11 @@ public class ToasterMessage {
         toast.setGravity(Gravity.BOTTOM|Gravity.LEFT, 0, 0);
         toast.show();
     }
+
+    public static void showMessageBottomBoom (Context context, String message){
+
+        Toast toast = Toast.makeText(context, message, Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.BOTTOM|Gravity.LEFT, 0, 0);
+        toast.show();
+    }
 }
